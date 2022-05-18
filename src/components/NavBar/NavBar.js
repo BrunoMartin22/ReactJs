@@ -5,9 +5,25 @@ import Button from '@mui/material/Button';
 
 const NavBar = () =>{
     return(
-        <AppBar position="static">
+        <AppBar position="static" className='header-primary'>
           <Toolbar>
-            <Button color="inherit">Login</Button>
+            <div className="container-logo">
+              <img src="./walkers.webp" />
+            </div>
+            <ul className='navbar'>
+              <li>
+                <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Home</Button>
+              </li>
+              <li>
+              <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Mesas</Button>
+              </li>
+              <li>
+              <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Reservas</Button>
+              </li>
+              <li>
+              <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Carta</Button>
+              </li>
+            </ul>
           </Toolbar>
         </AppBar>
     )
