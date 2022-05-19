@@ -1,4 +1,4 @@
-import CardItem from '../Card/Card'
+import CardItem from '../card/Card'
 import { Grid } from '@mui/material';
 
 const CardList = ({title}) => {
@@ -20,13 +20,13 @@ const CardList = ({title}) => {
         <>
         <h2>{title}</h2>
         <Grid container >
-            <Grid item md={3}>
+            <Grid >
                 <CardItem title={"Nuestro Bar"} image={"bar.jpg"}/>
             </Grid>
-            <Grid item md={3}>
+            <Grid >
                 <CardItem title={"Planta Baja"} image={"interior.jpg"}/>
             </Grid>
-            <Grid item md={3}>
+            <Grid>
                 <CardItem title={"2do piso"}  image={"interior 2do piso.jpg"}/>
             </Grid>
         </Grid>

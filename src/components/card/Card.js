@@ -15,7 +15,7 @@ const CardItem = ({image, title}) => {
         }
     }
     return(
-        <Card sx={{ minWidth: 275 }} className="card-item-container">
+        <Card sx={{ minWidth: 275 }} className="card-item-container fotos">
             <CardContent>
                 <div className='card-item'>
                     <div>

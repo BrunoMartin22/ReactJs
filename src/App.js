@@ -1,12 +1,13 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar.js';
-import CardItem from './components/card/Card'
+import CardList from './components/CardList/CardList.js';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <CardItem />
+      <CardList title={'Nuestros Espacios'}/>
+      
     </div>
   );
 }
