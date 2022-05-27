@@ -12,3 +12,13 @@ const lugares = [
         image : 'interior.jpg'
     },
 ]
+
+const lugar = 
+    {
+        title : 'Nuestro Bar',
+        image : 'bar.jpg',
+        id:1
+    }
+
+    export default lugares
+    export {lugar}

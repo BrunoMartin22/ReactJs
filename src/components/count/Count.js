@@ -15,12 +15,19 @@ const CountList = () =>{
      setCount(count - 1)
      }
  }
+ const onAdd = () =>{
+     console.log(count)
+ }
  return (
+     <>
+    <h1 className='personas'>Cantidad de personas</h1>
     <div className='count-item'>
         <Button onClick={removeCount}>-</Button>
         <p>{count}</p>
         <Button onClick={addCount}>+</Button>
+        <Button onClick={onAdd} >Reservar</Button>
     </div>
+    </>
  )
 }
 
