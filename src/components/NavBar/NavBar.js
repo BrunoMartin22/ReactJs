@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom'
 
 const NavBar = () =>{
     return(
@@ -13,7 +14,7 @@ const NavBar = () =>{
             </div>
             <ul className='navbar'>
               <li>
-                <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Home</Button>
+                <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' ><Link to="/">Home</Link></Button>
               </li>
               <li>
               <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Mesas</Button>

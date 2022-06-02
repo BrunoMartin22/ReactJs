@@ -1,15 +1,18 @@
 const lugares = [
     {
         title : 'Nuestro Bar',
-        image : 'bar.jpg'
+        image : 'bar.jpg',
+        id:1
     },
     {
         title : '2do Piso',
-        image : 'interior 2do piso.jpg'
+        image : 'interior 2do piso.jpg',
+        id:2
     },
     {
         title : 'Planta Baja',
-        image : 'interior.jpg'
+        image : 'interior.jpg',
+        id:3
     },
 ]
 

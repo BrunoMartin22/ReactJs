@@ -2,8 +2,9 @@ import './Card.css'
 import CountList from '../count/Count';
 import { Card, CardContent } from '@mui/material';
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom';
 
-const CardItem = ({image, title}) => {
+const CardItem = ({image, title, id}) => {
     return(
         <Card sx={{ minWidth: 275 }} className="card-item-container fotos">
             <CardContent>
@@ -13,7 +14,9 @@ const CardItem = ({image, title}) => {
                     </div>
                     <p>{title}</p>
                     <CountList/>
-                    <Button variant={'contained'} >Detalles</Button>
+                    <Button className='boton-detalle' variant={'contained'} >
+                        <Link to={`/lugar/${id}`}>Ver Detalle</Link>
+                    </Button>
                 </div>
             </CardContent>
         </Card>

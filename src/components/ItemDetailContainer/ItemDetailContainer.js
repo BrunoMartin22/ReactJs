@@ -1,6 +1,6 @@
 import { useEffect, useState} from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
-import { lugar } from '../../utils/productsMock'
+import lugares from '../../utils/productsMock'
 
 const ItemDetailContainer = () => {
     const [sitio , setSitio] = useState({})
@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
     const getItem = () => {
         return new Promise( (resolve, reject) => {
             setTimeout(() => {
-                resolve(lugar)
+                resolve(lugares)
             }, 2000)
         })
     }
@@ -20,11 +20,9 @@ const ItemDetailContainer = () => {
             setSitio(res)
         })
     }, [])
-
     return(
         <>
-            <div>Contenedor ITEM</div>
-            <ItemDetail data={lugar}/>
+            <ItemDetail data={lugares}/>
         </>
     )
 }
