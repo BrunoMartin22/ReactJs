@@ -1,26 +1,10 @@
 import { useState, useEffect } from 'react';
 import CardItem from '../card/Card'
 import { Grid } from '@mui/material';
+import lugares from '../../utils/productsMock';
 
 const CardList = ({title, sitio}) => {
     const [lugar, setLugar] = useState()
-    const lugares = [
-        {
-            title : 'Nuestro Bar',
-            image : 'bar.jpg',
-            id:1
-        },
-        {
-            title : 'Segundo Piso',
-            image : 'interior 2do piso.jpg',
-            id:2
-        },
-        {
-            title : 'Planta Baja',
-            image : 'interior.jpg',
-            id:3
-        },
-    ]
     const getLugar = () =>{
         return new Promise ((resolve, reject) => {
             setTimeout(()=>{
@@ -49,7 +33,7 @@ const CardList = ({title, sitio}) => {
                 lugares.map( ({title, image, id}) => {
                     return(
                         <Grid item md={3} key={id}>
-                            <CardItem title={title} image={image}/>
+                            <CardItem title={title} image={image} id={id}/>
                         </Grid>
                     )
                 })

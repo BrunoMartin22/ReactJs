@@ -18,6 +18,7 @@ const ItemDetail = ({data}) => {
             <div className="detail-info">
                 <div className='detail-title'>
                     <h2>{data.title}</h2>
+                    <span>Reservas unicamente hasta las 18:00hs</span>
                 </div>
                 <label>Selecciona la cantidad de personas</label>
                 <Select

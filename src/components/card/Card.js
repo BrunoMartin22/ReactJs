@@ -15,7 +15,7 @@ const CardItem = ({image, title, id}) => {
                     <p>{title}</p>
                     <CountList/>
                     <Button className='boton-detalle' variant={'contained'} >
-                        <Link to={`/lugar/${id}`}>Ver Detalle</Link>
+                        <Link to={`/Lugar/${id}`}>Ver Detalle</Link>
                     </Button>
                 </div>
             </CardContent>
