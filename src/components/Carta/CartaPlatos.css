@@ -1,0 +1,11 @@
+.fotos{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 320px;
+    margin-top: 70px;
+    border: 1px solid black;
+}
+.boton-detalle{
+    text-decoration: none;
+}

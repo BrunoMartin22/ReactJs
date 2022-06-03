@@ -10,7 +10,7 @@ const NavBar = () =>{
         <AppBar position="static" className='header-primary'>
           <Toolbar>
             <div className="container-logo">
-              <img src="./walkers.jpeg" />
+              <img src="./walkers.jpeg" alt='logo walkers' />
             </div>
             <ul className='navbar'>
               <li>
@@ -23,7 +23,7 @@ const NavBar = () =>{
               <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Reservas</Button>
               </li>
               <li>
-              <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' >Carta</Button>
+              <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn' ><Link to="/Carta">Carta</Link></Button>
               </li>
             </ul>
             <CartWidget/>
