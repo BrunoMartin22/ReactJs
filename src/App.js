@@ -6,6 +6,7 @@ import Detalle from './pages/Detalle';
 import Reserva from './pages/Reserva';
 import Carta from './pages/Carta';
 import DetallePlato from './pages/DetallePlato';
+import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/' element={<Home/>} />
           <Route exact path='/Lugar/:id' element={<Detalle />} />
           <Route exact path='/Carta' element={<Carta/>} />
+          <Route exact path='/Cart' element={<Cart/>} />
           <Route exact path='/Comida/:id' element={<DetallePlato/>} />
           <Route exact path='/Reserva' element={<Reserva/>}/>
           <Route exact path='*' element={<h1>404 - Pagina no encontrada</h1>} />

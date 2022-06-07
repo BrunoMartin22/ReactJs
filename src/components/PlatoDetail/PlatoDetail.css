@@ -56,12 +56,3 @@
     font-family: 'Fraunces', serif;
     font-family: 'Source Serif Pro', serif;
 }
-
-.reserva{
-    margin-top: 20px !important;
-    display: flex !important;
-    align-content: center !important;
-    padding-bottom: 10px !important;
-    background-color: black !important;
-    color: #b5b3b3 !important;
-}

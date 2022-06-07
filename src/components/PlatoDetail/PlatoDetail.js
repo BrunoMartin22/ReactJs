@@ -3,11 +3,15 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import './PlatoDetail.css'
 import { Button } from '@mui/material'
+import CountPlatos from '../count/CountPlatos';
 import { Link } from 'react-router-dom';
+
 
 
 const PlatoDetail = ({data}) => {
     const [espacio, setEspacio] = useState('');
+    const [cantidad, setCantidad] = useState(0)
+    const [showButton, setShowButton] = useState(false)
 
     const handleChange = (event) => {
         setEspacio(event.target.value);
@@ -23,7 +27,7 @@ const PlatoDetail = ({data}) => {
                     <h2>{data.title}</h2>
                     <span>Compras solo se reciben por delivery</span>
                 </div>
-                <label>Selecciona la cantidad</label>
+                <label>Selecciona el tamaño</label>
                 <Select
                     className='select-custom'
                     labelId="demo-simple-select-label"
@@ -32,13 +36,19 @@ const PlatoDetail = ({data}) => {
                     placeholder="Selecciona la cantidad"
                     onChange={handleChange}
                     >
-                    <MenuItem value={'1'}>1</MenuItem>
-                    <MenuItem value={'2'}>2</MenuItem>
-                    <MenuItem value={'3'}>3</MenuItem>
-                    <MenuItem value={'4'}>4</MenuItem>
+                    <MenuItem value={'Chico'}>Chico</MenuItem>
+                    <MenuItem value={'Mediano'}>Mediano</MenuItem>
+                    <MenuItem value={'Grande'}>Grande</MenuItem>
+                    <MenuItem value={'XL'}>XL</MenuItem>
 
                 </Select>
-                <Button className='reserva'><Link to={'/Reserva'}>Comprar</Link></Button>
+                {!showButton ?
+                <CountPlatos
+                    actualizarCantidad={setCantidad}
+                    setShowButton={setShowButton}
+                />
+                :
+                <Button variant='outlined'><Link to='/Cart'>Terminar mi compra</Link></Button>}
             </div>
         </div>
     )

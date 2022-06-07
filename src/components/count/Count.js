@@ -22,9 +22,9 @@ const CountList = () =>{
      <>
     <h1 className='personas'>Cantidad de personas</h1>
     <div className='count-item'>
-        <Button onClick={removeCount}>-</Button>
+        <Button onClick={addCount}>+</Button>   
         <p>{count}</p>
-        <Button onClick={addCount}>+</Button>
+        <Button onClick={removeCount}>-</Button>
         <Button onClick={onAdd} >Reservar</Button>
     </div>
     </>
