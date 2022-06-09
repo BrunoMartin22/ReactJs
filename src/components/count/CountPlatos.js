@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { Button } from '@mui/material'
 
 
+
 const CountPlatos = ({actualizarCantidad, setShowButton}) =>{
 
  const [count, setCount] = useState(0)
+
 
  const addCount = () =>{
      setCount(count + 1)
@@ -23,7 +25,7 @@ const CountPlatos = ({actualizarCantidad, setShowButton}) =>{
         <Button onClick={addCount}>+</Button>
         <p>{count}</p>
         <Button onClick={removeCount}>-</Button>
-        <Button variant='outlined' className='reserva' onClick={() => setShowButton(true)}>Agregar Producto</Button>
+        <Button variant='outlined' className='reserva' onClick={() => setShowButton(true)} >Agregar Producto</Button>
     </div>
     </>
  )

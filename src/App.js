@@ -7,23 +7,25 @@ import Reserva from './pages/Reserva';
 import Carta from './pages/Carta';
 import DetallePlato from './pages/DetallePlato';
 import Cart from './pages/Cart';
+import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-      <NavBar/>
-        <Routes>
-          <Route exact path='/' element={<Home/>} />
-          <Route exact path='/Lugar/:id' element={<Detalle />} />
-          <Route exact path='/Carta' element={<Carta/>} />
-          <Route exact path='/Cart' element={<Cart/>} />
-          <Route exact path='/Comida/:id' element={<DetallePlato/>} />
-          <Route exact path='/Reserva' element={<Reserva/>}/>
-          <Route exact path='*' element={<h1>404 - Pagina no encontrada</h1>} />
-        </Routes>
-      </BrowserRouter>
-      
+      <CartProvider>
+        <BrowserRouter>
+          <NavBar/>
+            <Routes>
+              <Route exact path='/' element={<Home/>} />
+              <Route exact path='/Lugar/:id' element={<Detalle />} />
+              <Route exact path='/Carta' element={<Carta/>} />
+              <Route exact path='/Cart' element={<Cart/>} />
+              <Route exact path='/Comida/:id' element={<DetallePlato/>} />
+              <Route exact path='/Reserva' element={<Reserva/>}/>
+              <Route exact path='*' element={<h1>404 - Pagina no encontrada</h1>} />
+            </Routes>
+        </BrowserRouter>
+      </CartProvider>
     </div>
   );
 }
