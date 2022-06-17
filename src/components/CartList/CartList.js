@@ -30,10 +30,10 @@ const CartList = ({title}) => {
         <>
         <h2>{title}</h2>
             {
-                Comida.map( ({title, image, id}) => {
+                Comida.map( ({title, image, id, price, cantidad}) => {
                     return(
                         <Grid item md={3} key={id}>
-                            <CartaItem title={title} image={image} id={id}/>
+                            <CartaItem title={title} image={image} price={price} cantidad={cantidad} id={id}/>
                         </Grid>
                     )
                 })

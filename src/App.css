@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+.general-container{
+  padding-top: 120px;
+}
 
 .App{
   text-align: center;
@@ -18,8 +21,9 @@ html{
 
 .col-cart-table__head h2 {font-size: 14px;width: 20%;}
 
-.cart-table__content {display: flex;}
-.cart-table__content-img {width: 10% !important;}
+.cart-table__content {display: flex; padding-top: 15px !important; padding-left: 55px !important;}
+.img-cart {width: 10% !important;
+}
 
 .cart-table__content-title {width: 30%;}
 

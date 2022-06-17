@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () =>{
     return(
-        <AppBar position="static" className='header-primary'>
+        <AppBar position="static" className='header-primary nav-top'>
           <Toolbar>
             <div className="container-logo">
               <img src="./walkers.jpeg" alt='logo walkers' />

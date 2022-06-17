@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import CartContext from '../../context/CartContext'
 import { useContext } from 'react';
 
-const CartaItem = ({image, title, id}) => {
-    
+const CartaItem = ({image, title, id, price, cantidad}) => {
+     console.log(price);
     const {addProductCart} = useContext(CartContext)
     return(
         <Card sx={{ minWidth: 275 }} className="card-item-container fotos">
@@ -17,8 +17,9 @@ const CartaItem = ({image, title, id}) => {
                         <img src={`./${image}`} alt={"producto"}/>
                     </div>
                     <p>{title}</p>
+                    <span>{price}</span>
                     <CountPlatos/>
-                    <Button variant='outlined' onClick={() => addProductCart({image, title, id})}> Añadir al carrito</Button>
+                    <Button variant='outlined' onClick={() => addProductCart({image, title, id, price, cantidad})}> Añadir al carrito</Button>
                     <Button className='boton-detalle' variant={'contained'} >
                         <Link to={`/Comida/${id}`}>Detalle</Link>
                     </Button>

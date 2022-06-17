@@ -6,7 +6,7 @@ import CartContext from '../../context/CartContext'
 import { Link } from 'react-router-dom';
 
 const CartWidget = () =>{
-    const { cartListItem } = useContext(CartContext)
+    const { cartListItem, deleteProduct } = useContext(CartContext)
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -48,15 +48,21 @@ const CartWidget = () =>{
                         </div>
                         <div className='cart-prod__info'>
                             <p>{item.title}</p>
+                            <span>{item.cantidad}</span>
                         </div>
                         <div className='cart-prod__action'>
-                            <button>
-                                <DeleteIcon />
+                            <button onClick={() => deleteProduct(item)}>
+                                    <DeleteIcon />
                             </button>
                         </div>
                     </div>
                     )
                 })}
+                 <div className='cart-checkout-details'>
+                        <Link to="/cart">
+                            <button style={{cursor: 'pointer'}} onClick={handleClose}>Terminar compra</button>
+                        </Link>
+                    </div>
                 
             </div>
         </Menu>
