@@ -17,7 +17,7 @@ const CartaItem = ({image, title, id, price, cantidad}) => {
                         <img src={`./${image}`} alt={"producto"}/>
                     </div>
                     <p>{title}</p>
-                    <span>{price}</span>
+                    <span>${price}</span>
                     <CountPlatos/>
                     <Button variant='outlined' onClick={() => addProductCart({image, title, id, price, cantidad})}> Añadir al carrito</Button>
                     <Button className='boton-detalle' variant={'contained'} >
