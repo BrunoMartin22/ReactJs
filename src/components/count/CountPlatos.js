@@ -21,11 +21,9 @@ const CountPlatos = ({actualizarCantidad, setShowButton}) =>{
  return (
      <>
     <div className='count-item'>
-        <label>Selecciona la cantidad</label>
         <Button onClick={addCount}>+</Button>
         <p>{count}</p>
         <Button onClick={removeCount}>-</Button>
-        <Button variant='outlined' className='reserva' onClick={() => setShowButton(true)} >Agregar Producto</Button>
     </div>
     </>
  )

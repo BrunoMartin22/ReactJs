@@ -25,28 +25,28 @@ const Comida =
         image : 'food nro1.jpg',
         price: 560,
         id:4,
-        cantidad: 0
+        cantidad: 1
     },
     {
         title : 'Mix de carne con ensalada',
         image : 'food nro2.jpg',
         price: 720,
         id:5,
-        cantidad: 0
+        cantidad: 1
     },
     {
         title : 'Pizza Muzarella especial',
         image : 'food nro3.jpg',
         price: 690,
         id:6,
-        cantidad: 0
+        cantidad: 1
     },
     {
         title : 'Hamburguesa de cordero con pollo',
         image : 'food nro4.jpg',
         price: 600,
         id:7,
-        cantidad: 0
+        cantidad: 1
     }]
 
     export default lugares

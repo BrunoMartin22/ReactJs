@@ -6,33 +6,110 @@
 .general-container{
   padding-top: 120px;
 }
+.general-container > h2{
+  font-family: 'Cinzel', serif;
+  font-family: 'Fraunces', serif;
+  font-family: 'Source Serif Pro', serif;
+  padding: 15px;
+  font-size: 30px;
+  text-decoration: underline;
+}
 
 .App{
   text-align: center;
 }
+
+.title-lugares{
+  font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+  padding: 15px;
+  font-size: 30px;
+}
 html{
-  background-color: aliceblue
+  background-color: #D1F5FF
 }
 .cart-container-icon > svg {
   color: white;
 }
 
-.col-cart-table__head {display: flex;border-bottom: 1px solid #ccc;}
-
-.col-cart-table__head h2 {font-size: 14px;width: 20%;}
-
-.cart-table__content {display: flex; padding-top: 15px !important; padding-left: 55px !important;}
-.img-cart {width: 10% !important;
+.col-cart-table__head {display: flex;
+  border-bottom: 1px solid #ccc;
 }
 
-.cart-table__content-title {width: 30%;}
+.col-cart-table__head h2 {font-size: 14px;
+  width: 20%;
+}
 
-.cart-table__content-price, .cart-table__content-quantity {width: 20%;}
-.cart-table__content > div {display: flex;justify-content: center;align-items: center;border-bottom: 1px solid #ccc;padding-bottom: 15px;}
+.cart-table__content {display: flex;
+   padding-top: 15px !important; 
+   padding-left: 55px !important;
+  }
+.img-cart {
+  width: 10% !important;
+}
 
-.cart-table__content-title {flex-direction: column;}
+.cart-table__content-title {
+  width: 30%;
+}
 
-.cart-footer {display: flex;justify-content: space-between;}
+.cart-table__content-price, .cart-table__content-quantity {
+  width: 20%;
+}
+.cart-table__content > div {display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.cart-table__content-title {
+  flex-direction: column;
+}
+
+.cart-footer {display: flex;
+  justify-content: space-between;
+}
 
 
-.cart-checkout-details button {background: black;border-radius: 40px;text-transform: none;color: white;font-family: 'Lato';padding: 10px 20px;margin-top: 15px;font-size: 14px;}
+.cart-checkout-details button {background: black;
+  border-radius: 40px;
+  text-transform: none;
+  color: white;
+  font-family: 'Lato';
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+
+.form-contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contact > div{
+  margin-bottom: 15px;
+}
+
+.form-contact button{
+  background: black;
+  border-radius: 40px;
+  text-transform: none;
+  color: white;
+  font-family: 'Lato';
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 14px;
+
+}
+.btn-order{
+  background: black;
+  border-radius: 30px;
+  text-transform: none;
+  color: white;
+  font-family: 'Lato';
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 14px;
+}

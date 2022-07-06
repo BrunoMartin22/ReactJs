@@ -8,4 +8,13 @@
 }
 .boton-detalle{
     text-decoration: none;
+    background: aliceblue !important;
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+}
+.btn-card{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }

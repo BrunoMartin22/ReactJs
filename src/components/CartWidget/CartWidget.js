@@ -48,7 +48,6 @@ const CartWidget = () =>{
                         </div>
                         <div className='cart-prod__info'>
                             <p>{item.title}</p>
-                            <span>{item.cantidad}</span>
                         </div>
                         <div className='cart-prod__action'>
                             <button onClick={() => deleteProduct(item)}>
